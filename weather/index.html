@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to a weather finder</h1>
+    <p>To find weather, enter URL:</p>
+    <p>http://localhost:7500/weather/address=Address</p>
+    <a href="" id="linkToWeather">Weather for your location</a>
+    <script>
+        navigator.geolocation.getCurrentPosition((position) => {
+            var URL = `http://localhost:7500/weather/address=${position.coords.latitude},${position.coords.longitude}`;
+            var a = document.getElementById('linkToWeather');
+            a.target="_blank";
+            a.href = URL;
+            console.log(position);
+        });
+    </script>
+</body>
+</html>
