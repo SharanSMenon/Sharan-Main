@@ -2,7 +2,7 @@ from species import *
 l = Lion("Matsumi", 12)
 l.whoami();
 l.eat()
-h.getMType()
+l.getMType()
 print("----")
 t = Tiger("Puli", 13)
 t.whoami();
