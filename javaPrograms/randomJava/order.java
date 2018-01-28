@@ -12,6 +12,6 @@ class order{
     return price;
   }
   public static void main(String[] args) {
-    System.out.println("You have made an order");
+    
   }
 }
