@@ -14,3 +14,5 @@ class Student(Person,object):
         Person.__init__(self,self.name,self.age,self.type)
     def checkGrade(self):
         return self.grade
+l = [1,2,3,4,5]
+l.sort()
